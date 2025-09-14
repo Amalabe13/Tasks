@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Drawing Game</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: #042619;
+    }
+    h1 {
+      color: white;
+    }
+    p {
+      color: #ddd;
+    }
+    canvas {
+      border: 1px solid #ccc;
+      background: white;
+      margin-top: 20px;
+      cursor: crosshair;
+    }
+    #info {
+      margin-top: 15px;
+      font-size: 18px;
+      color: white;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1> PERFECT CIRCLE!</h1>
+  <p>Draw a freehand circle around the red dot and check your points!</p>
+  <canvas id="gameCanvas" width="500" height="500"></canvas>
+  <div id="info">Draw your circle!</div>
+  <button onclick="checkCircle()">Check Accuracy</button>
+  <script src="script.js"></script>
+</body>
+</html>
